@@ -12,7 +12,7 @@ function Field({ placeholder, className }) {
   );
 }
 
-export default function Form() {
+export default function Contact() {
   return (
     <div className="form">
       {fields.map((field) => (
