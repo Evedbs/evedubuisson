@@ -1,0 +1,14 @@
+.toolsAndSkills1 {
+  margin-left: 256px;
+}
+
+.toolsAndSkills2 {
+  margin-left: 50vh;
+}
+
+.container {
+  padding: 156px;
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+}
