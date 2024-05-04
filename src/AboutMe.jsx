@@ -7,12 +7,13 @@ export default function AboutMe({ aboutMeRef }) {
       ref={aboutMeRef}
       className="about-me-content about-me-font about-me-scroll"
     >
-      <p>Hello, my name is Eve Dubuisson, I'm UX/UI engineer</p>
+      <p>{"Hello, my name is Eve Dubuisson, I'm an UX/UI engineer."}</p>
       <p>
-        Graduate of Licence in foreign languages, I switched to computer science
-        eight months ago. I like to code designes.
+        {
+          "Graduate of Licence in foreign languages, I switched to computer science eight months ago. I like to code designs."
+        }
       </p>
-      <button className="downloadCV">Download CV</button>
+      <button className="downloadCV">{"Download CV"}</button>
     </div>
   );
 }

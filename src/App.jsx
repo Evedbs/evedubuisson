@@ -19,17 +19,19 @@ export default function App() {
   const scrollToContact = scrollTo(contactRef);
 
   return (
-    <div className="scroll-container">
+    <div className="app">
       <Header
         scrollToAboutMe={scrollToAboutMe}
         scrollToEducation={scrollToEducation}
         scrollToToolsAndSkills={scrollToToolsAndSkills}
         scrollToContact={scrollToContact}
       />
-      <AboutMe aboutMeRef={aboutMeRef} />
-      <EducationAndExperience educationRef={educationRef} />
-      <ToolsAndSkills toolsAndSkillsRef={toolsAndSkillsRef} />
-      <Contact contactRef={contactRef} />
+      <div className="scroll-container">
+        <AboutMe aboutMeRef={aboutMeRef} />
+        <EducationAndExperience educationRef={educationRef} />
+        <ToolsAndSkills toolsAndSkillsRef={toolsAndSkillsRef} />
+        <Contact contactRef={contactRef} />
+      </div>
     </div>
   );
 }

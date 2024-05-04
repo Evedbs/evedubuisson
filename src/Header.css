@@ -1,10 +1,10 @@
 .header {
   background-color: brown;
   display: flex;
-  gap: 32px;
   justify-content: center;
-  padding: 1em;
-  position: fixed;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  gap: 32px;
   width: 100%;
   font-size: 24px;
 }
