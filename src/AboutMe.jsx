@@ -1,8 +1,12 @@
 import "./AboutMe.css";
+import "./scroll.css";
 
-export default function AboutMe() {
+export default function AboutMe({ aboutMeRef }) {
   return (
-    <div className="AboutMe content">
+    <div
+      ref={aboutMeRef}
+      className="about-me-content about-me-font about-me-scroll"
+    >
       <p>Hello, my name is Eve Dubuisson, I'm UX/UI engineer</p>
       <p>
         Graduate of Licence in foreign languages, I switched to computer science

@@ -4,37 +4,8 @@ body {
   place-items: center;
 }
 
-.box {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-.h,
-.a,
-.eae,
-.tas,
-.f {
-  height: 100vh;
-  scroll-snap-align: center;
-}
-
-.h {
-  background-color: aqua;
-}
-
-.a {
-  background-color: tomato;
-}
-
-.eae {
-  background-color: bisque;
-}
-
-.tas {
-  background-color: darkgoldenrod;
-}
-
-.f {
-  background-color: cadetblue;
+a:hover {
+  color: darkblue;
+  opacity: 0.5;
+  scale: 1.05;
 }

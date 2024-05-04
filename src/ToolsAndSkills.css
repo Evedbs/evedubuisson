@@ -1,13 +1,14 @@
 .toolsAndSkills1 {
-  margin-left: 256px;
+  margin-left: 16em;
 }
 
 .toolsAndSkills2 {
   margin-left: 50vh;
 }
 
-.container {
-  padding: 156px;
+.tools-and-skills-container {
+  padding-top: 5em;
+  padding-bottom: 1em;
   display: flex;
   flex-direction: row;
   font-size: 24px;

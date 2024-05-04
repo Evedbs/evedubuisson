@@ -1,0 +1,30 @@
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.about-me-scroll,
+.education-scroll,
+.tools-and-skills-scroll,
+.contact-scroll {
+  scroll-snap-align: start;
+}
+
+.about-me-scroll {
+  background-color: tomato;
+}
+
+.education-scroll {
+  background-color: bisque;
+}
+
+.tools-and-skills-scroll {
+  background-color: darkgoldenrod;
+}
+
+.contact-scroll {
+  background-color: cadetblue;
+}

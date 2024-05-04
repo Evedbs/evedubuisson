@@ -4,14 +4,19 @@ import linkedinIcon from "./assets/linkedinIcon.svg";
 import phoneCallIcon from "./assets/phoneCallIcon.svg";
 import pdfFile from "./assets/pdfFile.svg";
 
-export default function Header() {
+export default function Header({
+  scrollToAboutMe,
+  scrollToEducation,
+  scrollToToolsAndSkills,
+  scrollToContact,
+}) {
   return (
     <>
       <div className="header">
-        <a>About me</a>
-        <a>Education and experience</a>
-        <a>Tools and Skills</a>
-        <a>Contact</a>
+        <a onClick={scrollToAboutMe}>About me</a>
+        <a onClick={scrollToEducation}>Education and experience</a>
+        <a onClick={scrollToToolsAndSkills}>Tools and Skills</a>
+        <a onClick={scrollToContact}>Contact</a>
       </div>
       <div className="iconList">
         <img

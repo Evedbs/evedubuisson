@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  max-width: fit-content;
+  /* max-width: fit-content; */
   gap: 32px;
   padding: 256px;
 }
@@ -9,14 +9,11 @@
 .Name,
 .Email,
 .Message {
-  height: 64px;
+  height: 5em;
 }
 
 .Send {
   background-color: brown;
   padding: 2em;
   border-radius: 6px;
-}
-
-.Message {
 }

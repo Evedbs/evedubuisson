@@ -1,4 +1,5 @@
 import "./EducationAndExperience.css";
+import "./scroll.css";
 
 const sections = [
   { date: "September 2023 - now", description: "Personal project" },
@@ -19,9 +20,12 @@ function Section({ date, description }) {
   );
 }
 
-export default function EducationAndExperience() {
+export default function EducationAndExperience({ educationRef }) {
   return (
-    <div className="content">
+    <div
+      ref={educationRef}
+      className="education-content education-scroll"
+    >
       {sections.map((section) => (
         <Section
           key={section.date}
