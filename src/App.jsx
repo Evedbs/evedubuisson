@@ -1,11 +1,11 @@
 import "./App.css";
-import "./scroll.css";
 import Header from "./Header.jsx";
 import AboutMe from "./AboutMe.jsx";
 import EducationAndExperience from "./EducationAndExperience.jsx";
 import ToolsAndSkills from "./ToolsAndSkills.jsx";
 import Contact from "./Contact.jsx";
 import { useRef } from "react";
+import Icons from "./Icons.jsx";
 
 export default function App() {
   const aboutMeRef = useRef(null);
@@ -20,13 +20,14 @@ export default function App() {
 
   return (
     <div className="app">
+      <Icons />
       <Header
         scrollToAboutMe={scrollToAboutMe}
         scrollToEducation={scrollToEducation}
         scrollToToolsAndSkills={scrollToToolsAndSkills}
         scrollToContact={scrollToContact}
       />
-      <div className="scroll-container">
+      <div className="scrollContainer">
         <AboutMe aboutMeRef={aboutMeRef} />
         <EducationAndExperience educationRef={educationRef} />
         <ToolsAndSkills toolsAndSkillsRef={toolsAndSkillsRef} />

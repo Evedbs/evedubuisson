@@ -1,5 +1,4 @@
 import "./ToolsAndSkills.css";
-import "./scroll.css";
 
 const sections = [
   { name: "HTML5", level: "60" },
@@ -34,9 +33,9 @@ export default function ToolsAndSkills({ toolsAndSkillsRef }) {
   return (
     <div
       ref={toolsAndSkillsRef}
-      className="tools-and-skills-container tools-and-skills-scroll"
+      className="toolsAndSkills"
     >
-      <div className="toolsAndSkills1">
+      <div>
         {sections.map((section) => (
           <ComputerScience
             className={section.name}
@@ -46,7 +45,7 @@ export default function ToolsAndSkills({ toolsAndSkillsRef }) {
           />
         ))}
       </div>
-      <div className="toolsAndSkills2">
+      <div>
         {sections1.map((section) => (
           <ComputerScience
             className={section.language}

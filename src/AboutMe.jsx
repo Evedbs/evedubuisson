@@ -1,13 +1,12 @@
 import "./AboutMe.css";
-import "./scroll.css";
 
 export default function AboutMe({ aboutMeRef }) {
   return (
     <div
       ref={aboutMeRef}
-      className="about-me-content about-me-font about-me-scroll"
+      className="aboutMe"
     >
-      <p>{"Hello, my name is Eve Dubuisson, I'm an UX/UI engineer."}</p>
+      <h2>{"Hello, my name is Eve Dubuisson, I'm an UX/UI engineer."}</h2>
       <p>
         {
           "Graduate of Licence in foreign languages, I switched to computer science eight months ago. I like to code designs."

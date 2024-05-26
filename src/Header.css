@@ -8,29 +8,3 @@
   width: 100%;
   font-size: 24px;
 }
-
-.iconList {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  position: fixed;
-  margin-top: 400px;
-  gap: 32px;
-  margin-left: 72px;
-}
-
-.gmailIcon {
-  width: 32px;
-}
-
-.linkedinIcon {
-  width: 32px;
-}
-
-.phoneCallIcon {
-  width: 32px;
-}
-
-.pdfFile {
-  width: 32px;
-}

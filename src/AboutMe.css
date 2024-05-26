@@ -1,9 +1,13 @@
-.about-me-content {
-  padding: 320px;
-}
-
-.about-me-font {
+.aboutMe {
   font-size: 2em;
+  min-height: 100%;
+  min-width: 100%;
+  scroll-snap-align: start;
+  background-color: tomato;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .downloadCV {

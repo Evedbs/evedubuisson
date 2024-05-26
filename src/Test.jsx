@@ -28,3 +28,30 @@
 //     </>
 //   );
 // }
+
+function add2(nombre) {
+  if (nombre == null) {
+    return null;
+  }
+  return nombre + 2;
+}
+
+test("add2 to 6 should be equal to 8", () => {
+  jest.expect(add2(6)).toBe(8);
+});
+
+test("add2 to null should be equal to null", () => {
+  jest.expect(add2(null)).toBe(null);
+});
+
+function createDivChild(child) {
+  return <div>{child}</div>;
+}
+
+test("createDivChild(salut) should be equal to 8", () => {
+  jest.expect(createDivChild("salut")).toBe(<div>"salut"</div>);
+});
+
+test("add2 to null should be equal to null", () => {
+  jest.expect(add2(null)).toBe(null);
+});

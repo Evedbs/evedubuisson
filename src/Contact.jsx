@@ -1,5 +1,4 @@
 import "./Contact.css";
-import "./scroll.css";
 
 const fields = [{ name: "Name" }, { name: "Email" }, { name: "Message" }];
 
@@ -16,7 +15,7 @@ function Field({ placeholder, className }) {
 export default function Contact({ contactRef }) {
   return (
     <div
-      className="form contact-scroll"
+      className="contact"
       ref={contactRef}
     >
       {fields.map((field) => (
