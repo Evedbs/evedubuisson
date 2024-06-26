@@ -1,4 +1,5 @@
-import "./AboutMe.css";
+import "../styles/AboutMe.css";
+import { Button } from "@mui/material";
 
 export default function AboutMe({ aboutMeRef }) {
   return (
@@ -12,7 +13,11 @@ export default function AboutMe({ aboutMeRef }) {
           "Graduate of Licence in foreign languages, I switched to computer science eight months ago. I like to code designs."
         }
       </p>
-      <button className="downloadCV">{"Download CV"}</button>
+      <Button
+        variant="contained"
+        color="error"
+        size="large"
+      >{`DOWNLOAD CV`}</Button>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import "./ToolsAndSkills.css";
+import "../styles/ToolsAndSkills.css";
 
 const sections = [
   { name: "HTML5", level: "60" },

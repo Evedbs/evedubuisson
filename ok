@@ -1,0 +1,17 @@
+<nav className="navbar">
+  <div>Eve Dubuisson</div>
+  <ul>
+    <li>
+      <a onClick="{scrollToAboutMe}">About me</a>
+    </li>
+    <li>
+      <a onClick="{scrollToEducation}">Education and experience</a>
+    </li>
+    <li>
+      <a onClick="{scrollToToolsAndSkills}">Tools and Skills</a>
+    </li>
+    <li>
+      <a onClick="{scrollToContact}">Contact</a>
+    </li>
+  </ul>
+</nav>
