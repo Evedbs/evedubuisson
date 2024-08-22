@@ -1,64 +1,52 @@
-import { useState } from "react";
-import "../styles/Header.css";
-import {
-  AppBar,
-  Box,
-  IconButton,
-  Toolbar,
-  Typography,
-  Button,
-} from "@mui/material";
-import SendIcon from "@mui/icons-material/Send";
+import "../style/Header.css";
+import Navigation from "./Navigation";
+import bento from "../assets/menuBento.svg";
+
+function NavigationHidden({ showNavigation, setShowNavigation }) {
+  return (
+    <div className="containerNavigationHidden">
+      <div className="containerNameWork">
+        <span className="name">Eve Dubuisson</span>
+        <span className="work">UX engineer</span>
+      </div>
+      <div className="containerBento">
+        <img
+          src={bento}
+          onClick={() => setShowNavigation(true)}
+          className="bento"
+        />
+      </div>
+    </div>
+  );
+}
 
 export default function Header({
+  showNavigation,
+  setShowNavigation,
   scrollToAboutMe,
-  scrollToEducation,
+  scrollToProjects,
   scrollToToolsAndSkills,
   scrollToContact,
 }) {
-  const [activeModule, setActiveModule] = useState("");
-
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <IconButton>
-          <SendIcon />
-        </IconButton>
-        <Typography
-          variant="h6"
-          component="div"
-          sx={{ flexGrow: 1 }}
-        >
-          Eve Dubuisson
-        </Typography>
-        <Box>
-          <Button
-            color="inherit"
-            onClick={scrollToAboutMe}
-          >
-            About me
-          </Button>
-          <Button
-            color="inherit"
-            onClick={scrollToEducation}
-          >
-            Education and experience
-          </Button>
-          <Button
-            color="inherit"
-            onClick={scrollToToolsAndSkills}
-          >
-            Tools and Skills
-          </Button>
-          <Button
-            color="inherit"
-            onClick={scrollToContact}
-          >
-            Contact
-          </Button>
-        </Box>
-        <Box></Box>
-      </Toolbar>
-    </AppBar>
+    <div className="header">
+      {showNavigation === true ? (
+        <div className="navigation">
+          <Navigation
+            scrollToAboutMe={scrollToAboutMe}
+            scrollToEducation={scrollToProjects}
+            scrollToToolsAndSkills={scrollToToolsAndSkills}
+            scrollToContact={scrollToContact}
+            showNavigation={showNavigation}
+            setShowNavigation={setShowNavigation}
+          />
+        </div>
+      ) : (
+        <NavigationHidden
+          showNavigation={showNavigation}
+          setShowNavigation={setShowNavigation}
+        />
+      )}
+    </div>
   );
 }

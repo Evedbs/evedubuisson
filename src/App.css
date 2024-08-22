@@ -2,25 +2,18 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  /* scrollbar-width: none;
-  scrollbar-color: white black; */
 }
 
 ::-webkit-scrollbar {
   width: 5px;
-  /* background-color: blue; */
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(48, 99, 99);
+  background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: red;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: purple;
+  background: #0a4848;
 }
 
 p {
@@ -29,12 +22,6 @@ p {
 
 h2 {
   font-size: 32px;
-}
-
-a:hover {
-  color: darkblue;
-  opacity: 0.5;
-  cursor: pointer;
 }
 
 .app {

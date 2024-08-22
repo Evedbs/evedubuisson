@@ -1,11 +1,6 @@
-import "../styles/Contact.css";
-import {
-  TextField,
-  Button,
-  createTheme,
-  ThemeProvider,
-  Stack,
-} from "@mui/material";
+import "../style/Contact.css";
+import { TextField } from "@mui/material";
+import Button from "./Button";
 
 export default function Contact({ contactRef }) {
   return (
@@ -13,8 +8,9 @@ export default function Contact({ contactRef }) {
       className="contact"
       ref={contactRef}
     >
+      <div className="containerImageContact"></div>
       <div className="containerContact">
-        <TextField
+        {/* <TextField
           className="light"
           InputLabelProps={{ style: { color: "white" } }}
           id="outlined-basic"
@@ -49,7 +45,36 @@ export default function Contact({ contactRef }) {
           size="large"
         >
           Send
-        </Button>
+        </Button> */}
+        <TextField
+          required
+          id="standard-required"
+          label="First name"
+          variant="standard"
+          placeholder="John"
+        />
+        <TextField
+          required
+          id="standard-required"
+          label="Last name"
+          variant="standard"
+          placeholder="Doe"
+        />
+        <TextField
+          required
+          id="standard-required"
+          label="Email"
+          variant="standard"
+          placeholder="JohnDoe@gmail.com"
+        />
+        <TextField
+          required
+          id="standard-required"
+          label="Message"
+          variant="standard"
+          placeholder="The overview of your universe is interesting, let's schedule a job interview."
+        />
+        <Button label={"SEND"} />
       </div>
     </div>
   );

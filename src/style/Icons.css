@@ -1,0 +1,10 @@
+.iconList {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.icon {
+  width: 32px;
+  cursor: pointer;
+}

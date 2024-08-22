@@ -1,8 +1,8 @@
-import "../styles/Icons.css";
+import "../style/Icons.css";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Icons() {
   return (
@@ -10,7 +10,7 @@ export default function Icons() {
       <EmailIcon />
       <LinkedInIcon />
       <LocalPhoneIcon />
-      <PictureAsPdfIcon />
+      <GitHubIcon />
     </div>
   );
 }

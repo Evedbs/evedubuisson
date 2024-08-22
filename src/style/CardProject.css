@@ -1,0 +1,29 @@
+.cardRoot {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 400px;
+  height: 464px;
+  border: 1px solid black;
+}
+
+.containerCard {
+  width: 100%;
+  height: 100%;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerTitle {
+  margin-top: 16px;
+}
+
+.projectTitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  color: #0a4848;
+}
