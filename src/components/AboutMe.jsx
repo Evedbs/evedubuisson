@@ -17,7 +17,7 @@ export default function AboutMe({ aboutMeRef }) {
             }
           </p>
         </div>
-        <Button label={"DOWNLOAD CV"} />
+        <Button label={"DOWNLOAD RESUME"} />
       </div>
     </div>
   );

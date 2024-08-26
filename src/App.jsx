@@ -27,7 +27,7 @@ export default function App() {
     <div className="app">
       <Header
         scrollToAboutMe={scrollToAboutMe}
-        scrollToEducation={scrollToProjects}
+        scrollToProjects={scrollToProjects}
         scrollToToolsAndSkills={scrollToToolsAndSkills}
         scrollToContact={scrollToContact}
         showNavigation={showNavigation}
@@ -35,7 +35,7 @@ export default function App() {
       />
       <div className="scrollContainer">
         <AboutMe aboutMeRef={aboutMeRef} />
-        <Projects educationRef={projectsRef} />
+        <Projects projectsRef={projectsRef} />
         <ToolsAndSkills toolsAndSkillsRef={toolsAndSkillsRef} />
         <Contact contactRef={contactRef} />
       </div>

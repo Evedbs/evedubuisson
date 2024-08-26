@@ -34,7 +34,7 @@ export default function Header({
         <div className="navigation">
           <Navigation
             scrollToAboutMe={scrollToAboutMe}
-            scrollToEducation={scrollToProjects}
+            scrollToProjects={scrollToProjects}
             scrollToToolsAndSkills={scrollToToolsAndSkills}
             scrollToContact={scrollToContact}
             showNavigation={showNavigation}

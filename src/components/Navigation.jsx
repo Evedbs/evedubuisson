@@ -12,21 +12,23 @@ export default function Navigation({
 }) {
   return (
     <div className="navigationRoot">
-      <div className="containerImage">
-        <img
-          src={cross}
+      <div className="backgroundOnImage">
+        <div className="containerImage">
+          <img
+            src={cross}
+            onClick={() => setShowNavigation(false)}
+          />
+        </div>
+        <div
+          className="containerLinks"
           onClick={() => setShowNavigation(false)}
-        />
-      </div>
-      <div
-        className="containerLinks"
-        onClick={() => setShowNavigation(false)}
-      >
-        <span onClick={scrollToAboutMe}>About Me</span>
-        <span onClick={scrollToProjects}>Projects</span>
-        <span onClick={scrollToToolsAndSkills}>Tools and Skills</span>
-        <span onClick={scrollToContact}>Contact</span>
-        <Icons />
+        >
+          <span onClick={scrollToAboutMe}>About Me</span>
+          <span onClick={scrollToProjects}>Projects</span>
+          <span onClick={scrollToToolsAndSkills}>Tools and Skills</span>
+          <span onClick={scrollToContact}>Contact</span>
+          <Icons />
+        </div>
       </div>
     </div>
   );

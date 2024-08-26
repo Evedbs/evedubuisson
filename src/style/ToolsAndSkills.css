@@ -3,9 +3,35 @@
   background-color: rgb(255, 255, 255);
   min-height: 100%;
   min-width: 100%;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+}
+
+.toolsRoot {
   display: flex;
   flex-direction: row;
-  gap: 32em;
+  gap: 64px;
+}
+
+.containerTitleValues {
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  gap: 32px;
+}
+
+.titleTools {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  color: #0a4848;
+}
+
+.containerValues {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  gap: 16px;
+  font-size: 18px;
 }

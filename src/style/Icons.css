@@ -4,7 +4,14 @@
   gap: 8px;
 }
 
+.aIcons {
+  color: white;
+}
+
 .icon {
   width: 32px;
+}
+
+.aIcons:hover {
   cursor: pointer;
 }
