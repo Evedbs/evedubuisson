@@ -3,6 +3,7 @@ import CardProject from "./CardProject";
 import lemon from "../assets/lemon.jpg";
 import img from "../assets/img.jpg";
 import img1 from "../assets/img1.jpg";
+import littleLemonLogo from "../assets/littleLemonLogo.png";
 
 export default function Projects({ projectsRef }) {
   return (
@@ -12,7 +13,7 @@ export default function Projects({ projectsRef }) {
     >
       <CardProject
         title={"The Little Lemon"}
-        image={lemon}
+        image={littleLemonLogo}
       />
       <CardProject
         title={"Awesome"}

@@ -1,5 +1,7 @@
 import "../style/AboutMe.css";
 import Button from "./Button";
+import resume from "../assets/resume.pdf";
+import group from "../assets/group.png";
 
 export default function AboutMe({ aboutMeRef }) {
   return (
@@ -7,7 +9,9 @@ export default function AboutMe({ aboutMeRef }) {
       ref={aboutMeRef}
       className="aboutMe"
     >
-      <div className="aboutMeImage"></div>
+      <div className="imageAboutMe">
+        <img src={group} />
+      </div>
       <div className="aboutMeContent">
         <div className="aboutMeBody">
           <h2>{"Hello, my name is Eve, I'm an UX/UI engineer."}</h2>
@@ -17,7 +21,10 @@ export default function AboutMe({ aboutMeRef }) {
             }
           </p>
         </div>
-        <Button label={"DOWNLOAD RESUME"} />
+        <Button
+          href={resume}
+          label={"DOWNLOAD RESUME"}
+        />
       </div>
     </div>
   );

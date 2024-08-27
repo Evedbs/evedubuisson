@@ -2,23 +2,44 @@
   scroll-snap-align: start;
   background-color: rgb(255, 255, 255);
   min-height: 100%;
+  max-height: 100vh;
   min-width: 100%;
-
   display: flex;
   flex-direction: row;
-}
-
-.containerImageContact {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  height: 80%;
+  align-items: center;
 }
 
 .containerContact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 50%;
+  width: 50vw;
+  gap: 16px;
+}
+
+.formContact {
+  display: flex;
+  flex-direction: column;
   gap: 32px;
+  width: 80%;
+  margin-left: 64px;
+}
+
+.containerImageContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerImageContact > img {
+  width: 50vw;
+  object-fit: cover;
+}
+
+.alertMui {
+  position: absolute;
+  right: 32px;
+}
+
+.muiButton {
+  margin-left: 64px;
 }

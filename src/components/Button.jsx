@@ -1,14 +1,20 @@
 import "../style/Button.css";
 
-export default function Button({ label, onClick }) {
+export default function Button({ href, label, onClick }) {
   return (
-    <div
-      className="border"
-      onClick={onClick}
+    <a
+      className="aButton"
+      target="_blank"
+      href={href}
     >
-      <div className="label">
-        <span className="span">{label}</span>
+      <div
+        className="border"
+        onClick={onClick}
+      >
+        <div className="label">
+          <span className="span">{label}</span>
+        </div>
       </div>
-    </div>
+    </a>
   );
 }
