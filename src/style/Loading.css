@@ -1,0 +1,72 @@
+.loadingPage {
+  animation: disappear 3s forwards;
+  animation-delay: 2s;
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerNameWorkLoading {
+  display: flex;
+  flex-direction: column;
+}
+
+.spanName {
+  animation: smooth 3s forwards ease-in;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+}
+
+.spanWork {
+  animation: smooth 3s forwards ease-in;
+  animation-delay: 1s;
+  font-family: "Inter", sans-serif;
+  opacity: 0;
+  font-size: 18px;
+  color: #0a4848;
+}
+
+@keyframes smooth {
+  0% {
+    color: #0a4848;
+    opacity: 0;
+  }
+
+  10% {
+    color: #0a4848;
+    opacity: 1;
+  }
+
+  50% {
+    color: #0a4848;
+    opacity: 1;
+  }
+
+  80% {
+    color: #0a4848;
+    opacity: 1;
+  }
+
+  100% {
+    color: #0a4848;
+    opacity: 1;
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    z-index: 0;
+    opacity: 0;
+  }
+}

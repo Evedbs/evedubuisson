@@ -4,6 +4,7 @@ import AboutMe from "./components/AboutMe.jsx";
 import Projects from "./components/Projects.jsx";
 import ToolsAndSkills from "./components/ToolsAndSkills.jsx";
 import Contact from "./components/Contact.jsx";
+import Loading from "./components/Loading.jsx";
 import { useRef, useState } from "react";
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
 
   return (
     <>
+      <Loading />
       <div className="app">
         <Header
           scrollToAboutMe={scrollToAboutMe}
