@@ -24,21 +24,23 @@ export default function App() {
   }
 
   return (
-    <div className="app">
-      <Header
-        scrollToAboutMe={scrollToAboutMe}
-        scrollToProjects={scrollToProjects}
-        scrollToToolsAndSkills={scrollToToolsAndSkills}
-        scrollToContact={scrollToContact}
-        showNavigation={showNavigation}
-        setShowNavigation={setShowNavigation}
-      />
-      <div className="scrollContainer">
-        <AboutMe aboutMeRef={aboutMeRef} />
-        <Projects projectsRef={projectsRef} />
-        <ToolsAndSkills toolsAndSkillsRef={toolsAndSkillsRef} />
-        <Contact contactRef={contactRef} />
+    <>
+      <div className="app">
+        <Header
+          scrollToAboutMe={scrollToAboutMe}
+          scrollToProjects={scrollToProjects}
+          scrollToToolsAndSkills={scrollToToolsAndSkills}
+          scrollToContact={scrollToContact}
+          showNavigation={showNavigation}
+          setShowNavigation={setShowNavigation}
+        />
+        <div className="scrollContainer">
+          <AboutMe aboutMeRef={aboutMeRef} />
+          <Projects projectsRef={projectsRef} />
+          <ToolsAndSkills toolsAndSkillsRef={toolsAndSkillsRef} />
+          <Contact contactRef={contactRef} />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

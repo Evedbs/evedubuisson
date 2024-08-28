@@ -1,22 +1,9 @@
-export default function loading() {
+import "../style/Loading.css";
+
+export default function Loading() {
   return (
-    <>
-      <div className="containerLoading">
-        <div className="pre-loader">
-          <div className="loader"></div>
-          <div className="loaderBg"></div>
-        </div>
-        <div className="loaderContent">
-          <div className="count">
-            <p>0</p>
-          </div>
-          <div className="copy">
-            <p className="ml16">Eve Dubuisson</p>
-          </div>
-        </div>
-        <div className="loader2"></div>
-      </div>
-      <div className="siteContent"></div>
-    </>
+    <div className="loadingPage">
+      <span>Eve Dubuisson</span>
+    </div>
   );
 }
