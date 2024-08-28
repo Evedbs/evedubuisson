@@ -47,13 +47,12 @@ export default function Contact({ contactRef }) {
       className="contact"
       ref={contactRef}
     >
-      {" "}
       <Collapse in={open}>
         <Snackbar
           autoHideDuration={3000}
           onClose={() => setOpen(false)}
           open={open}
-          message="una pequena alerta"
+          message=""
         >
           <Alert
             sx={{ margin: "32px" }}
@@ -63,7 +62,7 @@ export default function Contact({ contactRef }) {
               setOpen(false);
             }}
           >
-            This is an outlined success Alert.
+            Message sent successfully
           </Alert>
         </Snackbar>
       </Collapse>
@@ -82,7 +81,7 @@ export default function Contact({ contactRef }) {
               setError(false);
             }}
           >
-            This is an outlined success Alert.
+            please complete all fields.
           </Alert>
         </Snackbar>
       </Collapse>

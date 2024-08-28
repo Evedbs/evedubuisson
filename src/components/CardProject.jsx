@@ -3,7 +3,7 @@ import "../style/CardProject.css";
 export default function CardProject({ image, title }) {
   return (
     <div className="cardRoot">
-      <div className="containerCard">
+      <div className="containerCardImage">
         <img
           className="projectImage"
           src={image}
