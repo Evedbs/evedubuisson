@@ -13,23 +13,20 @@
 }
 
 .containerNameWorkLoading {
+  animation: smooth 3s forwards ease-in;
   display: flex;
   flex-direction: column;
 }
 
 .spanName {
-  animation: smooth 3s forwards ease-in;
   font-family: "Oswald", sans-serif;
   font-size: 32px;
 }
 
 .spanWork {
-  animation: smooth 3s forwards ease-in;
-  animation-delay: 1s;
   font-family: "Inter", sans-serif;
-  opacity: 0;
   font-size: 18px;
-  color: #0a4848;
+  /* color: #0a4848; */
 }
 
 @keyframes smooth {
