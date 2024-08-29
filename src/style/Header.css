@@ -41,6 +41,7 @@ span {
 }
 
 .navigation {
+  animation: appearNavigation 1s forwards;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,4 +59,14 @@ span {
 
 .hidden {
   display: none;
+}
+
+@keyframes appearNavigation {
+  0% {
+    translate: 100vw;
+  }
+
+  100% {
+    translate: 0vw;
+  }
 }

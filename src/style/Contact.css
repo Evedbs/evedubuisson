@@ -16,6 +16,10 @@
   gap: 16px;
 }
 
+.containerContact > h2 {
+  margin-left: 64px;
+}
+
 .formContact {
   display: flex;
   flex-direction: column;

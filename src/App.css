@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  animation: appearFromRight 2s forwards;
+  animation: appearFromBottom 2s forwards;
   animation-delay: 3s;
   margin: 0;
   display: flex;
@@ -44,7 +44,7 @@ h2 {
   height: 100%;
 }
 
-@keyframes appearFromRight {
+@keyframes appearFromBottom {
   0% {
     translate: 0% 100%;
   }

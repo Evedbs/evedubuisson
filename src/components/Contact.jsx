@@ -86,6 +86,7 @@ export default function Contact({ contactRef }) {
         </Snackbar>
       </Collapse>
       <div className="containerContact">
+        <h2>{"Get in touch"}</h2>
         <form
           ref={form}
           className="formContact"
