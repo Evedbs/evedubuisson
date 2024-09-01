@@ -1,4 +1,5 @@
 body {
+  background-color: #edefee;
   overflow-x: hidden;
   animation: appearFromBottom 2s forwards;
   animation-delay: 3s;
@@ -36,6 +37,7 @@ h2 {
 }
 
 .scrollContainer {
+  background-color: #edefee;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -47,9 +49,11 @@ h2 {
 @keyframes appearFromBottom {
   0% {
     translate: 0% 100%;
+    opacity: 1;
   }
 
   100% {
     translate: 0% -0%;
+    opacity: 1;
   }
 }

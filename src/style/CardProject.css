@@ -4,31 +4,29 @@
   align-items: start;
   width: 400px;
   height: 464px;
-  /* border: 1px solid black; */
 }
 
 .containerCardImage {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 464px;
 }
 
 .projectImage {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 400px;
+  height: 464px;
+  object-fit: cover;
   box-shadow: -12px 12px 12px #a0a0a0;
 }
 
-.projectImage:hover {
-  box-shadow: -24px 24px 24px #a0a0a0;
-  transform: translate(12px, -12px);
-  cursor: pointer;
+.containerTitleSubtitle:hover {
   transition: 0.5s;
 }
 
-.containerTitle {
+.containerTitleSubtitle {
+  display: flex;
+  flex-direction: column;
   margin-top: 16px;
 }
 
@@ -36,4 +34,9 @@
   font-family: "Oswald", sans-serif;
   font-size: 32px;
   color: #0a4848;
+}
+
+.subtitleProject {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
 }

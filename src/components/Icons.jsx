@@ -6,7 +6,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 export default function Icons() {
   return (
     <div className="iconList">
-      <a className="aIcons">
+      <a
+        target="_blank"
+        className="aIcons"
+        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqZhDcccFkjKFZdZnNqfNjZLpmXSlPKdSWCslwZfPFmrkWNgKBkwXMXrfVxdCSKdhRhsmL"
+      >
         <EmailIcon />
       </a>
       <a

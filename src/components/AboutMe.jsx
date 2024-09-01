@@ -1,7 +1,7 @@
 import "../style/AboutMe.css";
 import Button from "./Button";
 import resume from "../assets/resume.pdf";
-import group from "../assets/group.png";
+import woman from "../assets/woman.png";
 
 export default function AboutMe({ aboutMeRef }) {
   return (
@@ -9,8 +9,11 @@ export default function AboutMe({ aboutMeRef }) {
       ref={aboutMeRef}
       className="aboutMe"
     >
-      <div className="imageAboutMe">
-        <img src={group} />
+      <div className="containerImageAboutMe">
+        <img
+          src={woman}
+          className="imageAboutMe"
+        />
       </div>
       <div className="aboutMeContent">
         <div className="aboutMeBody">

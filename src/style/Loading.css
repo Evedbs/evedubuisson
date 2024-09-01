@@ -5,7 +5,7 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: #edefee;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +13,7 @@
 }
 
 .containerNameWorkLoading {
-  animation: smooth 3s forwards ease-in;
+  animation: smooth 2s forwards ease-in;
   display: flex;
   flex-direction: column;
 }
@@ -26,7 +26,6 @@
 .spanWork {
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  /* color: #0a4848; */
 }
 
 @keyframes smooth {
