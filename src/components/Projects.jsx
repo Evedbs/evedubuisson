@@ -1,7 +1,5 @@
 import "../style/Projects.css";
 import CardProject from "./CardProject";
-import img from "../assets/img.jpg";
-import img1 from "../assets/img1.jpg";
 import littleLemonLogo from "../assets/drawingLemon.jpg";
 import soon from "../assets/soon.png";
 
