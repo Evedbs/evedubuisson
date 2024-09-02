@@ -4,7 +4,7 @@ import AboutMe from "./components/AboutMe.jsx";
 import Projects from "./components/Projects.jsx";
 import ToolsAndSkills from "./components/ToolsAndSkills.jsx";
 import Contact from "./components/Contact.jsx";
-import Loading from "./components/Loading.jsx";
+import Loading from "./components/loading.jsx";
 import { useRef, useState } from "react";
 
 export default function App() {
