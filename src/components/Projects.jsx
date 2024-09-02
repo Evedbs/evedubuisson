@@ -17,6 +17,7 @@ export default function Projects({ projectsRef }) {
       />
       <CardProject
         title={"Social Media"}
+        subtitle={"An application to discuss about current events"}
         image={soon}
       />
       <CardProject

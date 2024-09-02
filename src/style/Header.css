@@ -37,6 +37,7 @@
 }
 
 .navigation {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   animation: appearNavigation 0.5s forwards;
   display: flex;
   flex-direction: column;
@@ -59,10 +60,26 @@
 
 @keyframes appearNavigation {
   0% {
-    translate: 100vw;
+    clip-path: polygon(100% 0, 100% 100%, 100% 50%);
+  }
+
+  20% {
+    clip-path: polygon(100% 0, 100% 100%, 80% 51%);
+  }
+
+  50% {
+    clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+  }
+
+  70% {
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+  }
+
+  90% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 75%);
   }
 
   100% {
-    translate: 0vw;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }

@@ -23,7 +23,7 @@ export default function AboutMe({ aboutMeRef }) {
           </p>
           <p className="aboutMeBody">
             {
-              "The gathering of views and experiences always lead us to the best version of our project, so impatient to discover the universe of my future challenge, in this ever-changing environment."
+              "The gathering of views and experiences always lead us to the best version of our project, so I'm impatient to discover the universe of my future challenge, in this ever-changing environment."
             }
           </p>
         </div>

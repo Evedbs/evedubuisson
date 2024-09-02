@@ -40,3 +40,7 @@
   gap: 24px;
   color: white;
 }
+
+.spanNavigation:hover {
+  cursor: pointer;
+}
