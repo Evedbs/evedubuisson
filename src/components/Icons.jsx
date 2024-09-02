@@ -6,9 +6,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 export default function Icons() {
   return (
     <div className="iconList">
-      <a className="aIcons">
-        <EmailIcon />
-      </a>
       <a
         className="aIcons"
         href="https://www.linkedin.com/in/eve-dubuisson/"

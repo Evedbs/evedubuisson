@@ -23,10 +23,30 @@ export default function Navigation({
           className="containerLinks"
           onClick={() => setShowNavigation(false)}
         >
-          <span onClick={scrollToAboutMe}>About Me</span>
-          <span onClick={scrollToProjects}>Projects</span>
-          <span onClick={scrollToToolsAndSkills}>Tools and Skills</span>
-          <span onClick={scrollToContact}>Contact</span>
+          <span
+            className="spanNavigation"
+            onClick={scrollToAboutMe}
+          >
+            About Me
+          </span>
+          <span
+            className="spanNavigation"
+            onClick={scrollToProjects}
+          >
+            Projects
+          </span>
+          <span
+            className="spanNavigation"
+            onClick={scrollToToolsAndSkills}
+          >
+            Tools and Skills
+          </span>
+          <span
+            className="spanNavigation"
+            onClick={scrollToContact}
+          >
+            Contact
+          </span>
           <Icons />
         </div>
       </div>

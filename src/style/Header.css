@@ -1,13 +1,15 @@
-span {
-  cursor: pointer;
-}
-
 .containerNavigationHidden {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   margin-top: 16px;
+}
+
+.containerNameWork {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
 }
 
 .name {
@@ -20,13 +22,6 @@ span {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   color: #0a4848;
-}
-
-.containerNameWork {
-  z-index: 12;
-  display: flex;
-  flex-direction: column;
-  margin-left: 16px;
 }
 
 .containerImage {
@@ -42,6 +37,8 @@ span {
 }
 
 .navigation {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  animation: appearNavigation 0.5s forwards;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,4 +56,30 @@ span {
 
 .hidden {
   display: none;
+}
+
+@keyframes appearNavigation {
+  0% {
+    clip-path: polygon(100% 0, 100% 100%, 100% 50%);
+  }
+
+  20% {
+    clip-path: polygon(100% 0, 100% 100%, 80% 51%);
+  }
+
+  50% {
+    clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+  }
+
+  70% {
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+  }
+
+  90% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 75%);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
 }

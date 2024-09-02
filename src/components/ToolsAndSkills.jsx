@@ -13,7 +13,6 @@ export default function ToolsAndSkills({ toolsAndSkillsRef }) {
             <span>Figma</span>
             <span>Bootstrap</span>
             <span>Material UI</span>
-            <span>GSAP</span>
           </div>
         </div>
         <div className="containerTitleValues">
