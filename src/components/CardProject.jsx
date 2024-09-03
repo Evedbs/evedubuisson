@@ -7,18 +7,24 @@ export default function CardProject({
   className = "",
 }) {
   return (
-    <div className="cardRoot">
-      <div className={`containerCardImage ${className}`}>
-        <img
-          className="projectImage"
-          src={image}
-          alt="web site project"
-        />
+    <a
+      target="_blank"
+      className="projectLink"
+      href="https://lillemonrestaurant.netlify.app/"
+    >
+      <div className="cardRoot">
+        <div className={`containerCardImage ${className}`}>
+          <img
+            className="projectImage"
+            src={image}
+            alt="web site project"
+          />
+        </div>
+        <div className="containerTitleSubtitle">
+          <span className="projectTitle">{title}</span>
+          <span className="subtitleProject">{subtitle}</span>
+        </div>
       </div>
-      <div className="containerTitleSubtitle">
-        <span className="projectTitle">{title}</span>
-        <span className="subtitleProject">{subtitle}</span>
-      </div>
-    </div>
+    </a>
   );
 }

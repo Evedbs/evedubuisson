@@ -29,9 +29,11 @@ export default function ToolsAndSkills({ toolsAndSkillsRef }) {
           <span className="titleTools">BACK-END</span>
           <div className="containerValues">
             <span>Node</span>
+            <span>MongoDB</span>
+            <span>Mongoose</span>
+            <span>Express</span>
             <span>SQL</span>
             <span>Sequelize</span>
-            <span>Express</span>
             <span>MySQL Workbench</span>
           </div>
         </div>
