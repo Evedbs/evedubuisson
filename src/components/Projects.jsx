@@ -13,6 +13,7 @@ export default function Projects({ projectsRef }) {
         title={"The Little Lemon"}
         subtitle={"Showcase website for a restaurant"}
         image={littleLemonLogo}
+        href={"https://lillemonrestaurant.netlify.app/"}
         className="enableProject"
       />
       <CardProject

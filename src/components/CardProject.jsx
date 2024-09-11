@@ -5,12 +5,13 @@ export default function CardProject({
   title,
   subtitle,
   className = "",
+  href,
 }) {
   return (
     <a
       target="_blank"
       className="projectLink"
-      href="https://lillemonrestaurant.netlify.app/"
+      href={href}
     >
       <div className="cardRoot">
         <div className={`containerCardImage ${className}`}>
