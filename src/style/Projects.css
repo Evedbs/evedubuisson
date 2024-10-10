@@ -5,6 +5,7 @@
   min-width: 100%;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   gap: 64px;

@@ -17,13 +17,13 @@ export default function Projects({ projectsRef }) {
         className="enableProject"
       />
       <CardProject
-        title={"Social Media"}
-        subtitle={"An application to discuss about current events"}
+        title={"Sweet Recipes"}
+        subtitle={"A dessert listing website"}
         image={soon}
       />
       <CardProject
-        title={"Lucky Shrub"}
-        subtitle={"A website to learn about garden types"}
+        title={"Social Media"}
+        subtitle={"An application to discuss about current events"}
         image={soon}
       />
     </div>
