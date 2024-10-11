@@ -43,3 +43,34 @@ h2 {
 .emAboutMe {
   font-weight: 800;
 }
+
+@media only screen and (max-width: 500px) {
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageAboutMe {
+    object-fit: contain;
+    height: 200px;
+    width: 100vw;
+  }
+
+  .titleSecondaryAboutMe {
+    font-family: "Oswald", sans-serif;
+    color: #0a4848;
+    font-size: 24px;
+  }
+
+  .aboutMeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    margin: 32px;
+  }
+
+  .aboutMeBody {
+    width: 80%;
+  }
+}
