@@ -19,7 +19,10 @@ export default function AboutMe({ aboutMeRef }) {
         <div className="aboutMeBody">
           <h2>{"Hello, my name is Eve, I'm an UX/UI engineer."}</h2>
           <p className="aboutMeBody">
-            {"I like to build accessible, intuitive and minimalistic designs."}
+            I like to build{" "}
+            <span className="emAboutMe">
+              accessible, intuitive and minimalistic designs.
+            </span>
           </p>
           <p className="aboutMeBody">
             {

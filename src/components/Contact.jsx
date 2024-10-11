@@ -2,12 +2,11 @@ import "../style/Contact.css";
 import { Alert, Collapse, Snackbar, TextField } from "@mui/material";
 import Button from "./Button";
 import emailjs from "@emailjs/browser";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import woman1 from "../assets/woman2.png";
 
 export default function Contact({ contactRef }) {
   const form = useRef();
-  const imageRef = useRef();
 
   const [fields, setFields] = useState({
     fullName: "",
