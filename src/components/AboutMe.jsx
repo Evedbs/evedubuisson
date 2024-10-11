@@ -20,13 +20,13 @@ export default function AboutMe({ aboutMeRef }) {
           <h2 className="titleSecondaryAboutMe">
             {"Hello, my name is Eve, I'm an UX/UI engineer."}
           </h2>
-          <p className="aboutMeBody">
+          <p className="aboutMeBody pBody">
             I like to build{" "}
             <span className="emAboutMe">
               accessible, intuitive and minimalistic designs.
             </span>
           </p>
-          <p className="aboutMeBody">
+          <p className="aboutMeBody pBody">
             {
               "The gathering of views and experiences always lead us to the best version of our project, so I'm impatient to discover the universe of my future challenge, in this ever-changing environment."
             }

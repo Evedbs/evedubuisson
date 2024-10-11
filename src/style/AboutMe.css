@@ -60,6 +60,7 @@ h2 {
     font-family: "Oswald", sans-serif;
     color: #0a4848;
     font-size: 24px;
+    margin-top: 0px;
   }
 
   .aboutMeContent {
@@ -71,6 +72,10 @@ h2 {
   }
 
   .aboutMeBody {
-    width: 80%;
+    width: 90vw;
+  }
+
+  .pBody {
+    font-size: 16px;
   }
 }
