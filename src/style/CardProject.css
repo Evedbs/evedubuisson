@@ -62,6 +62,7 @@
     width: 128px;
     height: 128px;
     box-shadow: none;
+    margin-left: 16px;
   }
   .containerTitleSubtitle {
     margin: 16px;
