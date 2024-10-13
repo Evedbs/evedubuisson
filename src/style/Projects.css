@@ -20,5 +20,9 @@
   box-shadow: -24px 24px 24px #a0a0a0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
 }
