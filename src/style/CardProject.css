@@ -55,12 +55,13 @@
   }
   .cardRoot {
     height: 200px;
-
     display: flex;
     flex-direction: row;
   }
   .projectImage {
-    height: 200px;
+    width: 128px;
+    height: 128px;
+    box-shadow: none;
   }
   .containerTitleSubtitle {
     margin: 16px;
