@@ -1,7 +1,6 @@
 import "../style/Projects.css";
 import CardProject from "./CardProject";
-import littleLemonLogo from "../assets/drawingLemon.jpg";
-import soon from "../assets/soon.png";
+import { PROJECTS } from "../constants/PROJECTS";
 
 export default function Projects({ projectsRef }) {
   return (
@@ -9,23 +8,37 @@ export default function Projects({ projectsRef }) {
       ref={projectsRef}
       className="projects"
     >
-      <CardProject
-        title={"The Little Lemon"}
-        subtitle={"Showcase website for a restaurant"}
-        image={littleLemonLogo}
+      {PROJECTS.map((project) => (
+        <CardProject
+          key={project.title}
+          title={project.title}
+          subtitle={project.subtitle}
+          image={project.image}
+          href={project.href}
+          className={project.enabled && "enableProject"}
+          enabled={project.enabled}
+        />
+      ))}
+
+      {/* <CardProject
+        title={PROJECTS[0].title}
+        subtitle={PROJECTS[0].subtitle}
+        image={PROJECTS.image}
         href={"https://lillemonrestaurant.netlify.app/"}
         className="enableProject"
       />
-      <CardProject
-        title={"Sweet Recipes"}
-        subtitle={"A dessert listing website"}
-        image={soon}
-      />
+      <div>
+        <CardProject
+          title={"Sweet Recipes"}
+          subtitle={"A recipe listing website"}
+          image={screenshot}
+        />
+      </div>
       <CardProject
         title={"Social Media"}
         subtitle={"An application to discuss about current events"}
         image={soon}
-      />
+      /> */}
     </div>
   );
 }

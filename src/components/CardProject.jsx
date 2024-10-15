@@ -6,6 +6,7 @@ export default function CardProject({
   subtitle,
   className = "",
   href,
+  enabled,
 }) {
   return (
     <a
@@ -13,13 +14,14 @@ export default function CardProject({
       className="projectLink"
       href={href}
     >
-      <div className="cardRoot">
+      <div className={"cardRoot"}>
         <div className={`containerCardImage ${className}`}>
           <img
-            className="projectImage"
+            className={enabled ? "projectImage" : "projectImageDisabled"}
             src={image}
             alt="web site project"
           />
+          <span className={enabled ? "soonDisabled" : "soon"}>SOON</span>
         </div>
         <div className="containerTitleSubtitle">
           <span className="projectTitle">{title}</span>

@@ -17,11 +17,34 @@
   height: 464px;
 }
 
+.soon {
+  position: absolute;
+  display: flex;
+  margin-left: 175px;
+  margin-top: 224px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  color: #0a4848;
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.soonDisabled {
+  display: none;
+}
+
 .projectImage {
   width: 400px;
   height: 464px;
   object-fit: cover;
   box-shadow: -12px 12px 12px #a0a0a0;
+}
+
+.projectImageDisabled {
+  width: 400px;
+  height: 464px;
+  object-fit: cover;
+  opacity: 0.3;
 }
 
 .containerTitleSubtitle:hover {
@@ -47,6 +70,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .soon {
+    display: none;
+  }
   .containerCardImage {
     display: flex;
     flex-direction: column;
@@ -62,6 +88,11 @@
     width: 128px;
     height: 128px;
     box-shadow: none;
+    margin-left: 16px;
+  }
+  .projectImageDisabled {
+    width: 128px;
+    height: 128px;
     margin-left: 16px;
   }
   .containerTitleSubtitle {
