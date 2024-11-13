@@ -36,6 +36,20 @@
   font-size: 18px;
 }
 
+.titleChart {
+  text-align: center;
+  inline-size: 8em;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.containerRadarChart {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  margin: auto;
+}
+
 @media only screen and (max-width: 500px) {
   .toolsRoot {
     display: flex;
@@ -66,5 +80,19 @@
   }
   .containerValues > span {
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .containerRadarChart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titleChart {
+    font-size: 1.5em;
+  }
+  .containerRadarChart {
+    width: 100%;
   }
 }

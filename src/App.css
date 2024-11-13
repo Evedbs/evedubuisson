@@ -13,7 +13,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #ffffff;
+  background-color: #edefee;
 }
 
 ::-webkit-scrollbar-thumb {

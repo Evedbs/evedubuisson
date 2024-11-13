@@ -1,12 +1,13 @@
 import "../style/ToolsAndSkills.css";
-
+import PolarAreaChart from "./SkillsDiagram";
 export default function ToolsAndSkills({ toolsAndSkillsRef }) {
   return (
     <div
       ref={toolsAndSkillsRef}
       className="toolsAndSkills"
     >
-      <div className="toolsRoot">
+      <PolarAreaChart />
+      {/* <div className="toolsRoot">
         <div className="containerTitleValues">
           <span className="titleTools">DESIGN</span>
           <div className="containerValues">
@@ -44,7 +45,7 @@ export default function ToolsAndSkills({ toolsAndSkillsRef }) {
             <span>Vite</span>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

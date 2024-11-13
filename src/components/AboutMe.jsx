@@ -18,7 +18,9 @@ export default function AboutMe({ aboutMeRef }) {
       <div className="aboutMeContent">
         <div className="aboutMeBody">
           <h2 className="titleSecondaryAboutMe">
-            {"Hello, my name is Eve, I'm an UX/UI engineer."}
+            {
+              "Hello, my name is Eve, I'm an UX/UI Engineer and Front-End Developer."
+            }
           </h2>
           <p className="aboutMeBody pBody">
             I like to build{" "}
