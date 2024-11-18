@@ -1,6 +1,7 @@
 import littleLemonLogo from "../assets/drawingLemon.jpg";
 import soon from "../assets/soon.jpg";
-import screenshot from "../assets/screenshot.png";
+// import screenshot from "../assets/screenshot.png";
+import sweetRecipes from "../assets/sweetRecipes.svg";
 
 export const PROJECTS = [
   {
@@ -13,8 +14,9 @@ export const PROJECTS = [
   {
     title: "Sweet Recipes",
     subtitle: "A recipe listing website",
-    image: screenshot,
-    enabled: false,
+    image: sweetRecipes,
+    href: "https://sweetrecipes.vercel.app",
+    enabled: true,
   },
   {
     title: "Social Media",
