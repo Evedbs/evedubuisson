@@ -20,7 +20,7 @@ export const PROJECTS = [
     enabled: true,
   },
   {
-    title: "Social Media",
+    title: "Felines Quiz",
     subtitle: "A quiz to check your knowledge of felines",
     href:"https://quiz.nybtech.fr/",
     image: cheetah,
