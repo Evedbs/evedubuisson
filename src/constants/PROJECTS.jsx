@@ -1,7 +1,8 @@
 import littleLemonLogo from "../assets/drawingLemon.jpg";
-import soon from "../assets/soon.jpg";
+// import soon from "../assets/soon.jpg";
 // import screenshot from "../assets/screenshot.png";
-import sweetRecipes from "../assets/sweetRecipes.svg";
+import sweetRecipes from "../assets/sweetRecipes.png";
+import cheetah from "../assets/cheetah.png"
 
 export const PROJECTS = [
   {
@@ -20,8 +21,9 @@ export const PROJECTS = [
   },
   {
     title: "Social Media",
-    subtitle: "An application to discuss about current events",
-    image: soon,
-    enabled: false,
+    subtitle: "A quiz to check your knowledge of felines",
+    href:"https://quiz.nybtech.fr/",
+    image: cheetah,
+    enabled: true,
   },
 ];
